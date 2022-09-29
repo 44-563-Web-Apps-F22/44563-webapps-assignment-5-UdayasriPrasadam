@@ -13,6 +13,27 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-family; font-size: larger; font-size: larger;" >
+    <a class="navbar-brand" href="insects.html">Interesting Insects</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#InsectNavbarContent" aria-controls="InsectNavbarContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="InsectNavbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="insects.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <h1 style = "text-align: center; color:greenyellow;background-color: darkorange;">Insects by Udayasri Prasadam</h1>
 <div class="container">
     <div class="row">
@@ -34,7 +55,169 @@
     </div>
     <p style="color:tomato ;">when I reduce the size of the browser slowly insect names row breaks first.
         Although the objects are piled in a row, they can also be stacked vertically according to the width of the view port. Here the view port is browser.</p>
-
-
+        <div class="container">
+          <img class="img-fluid" src="praying.jpg" alt="Praying mantis" height="300" width="300" >
+          <img class="img-fluid" src="roach.jpg" alt="Roach"height="300" width="300">
+          <img class="img-fluid" src="scarab.jpg" alt="Tscarab" height="300" width="300">
+        </div>
+        <br><br>
+            <div class="container">
+                <img class="img-thumbnail" src="praying.jpg" alt="Praying mantis" width="300">
+                <img class="img-thumbnail" src="roach.jpg" alt="Roach" width="300">
+                <img class="img-thumbnail" src="scarab.jpg" alt="scarab" width="300">
+            </div>
+            <br>
+            <br>
+            <div class="container">
+              <table class="table table-bordered border-danger table-info table-striped table-hover table-responsive"
+              style="text-align: center;">
+              <caption style="color:firebrick">Table tells about Insects, City, River of my lastname respective Letters</caption>
+                  <thead class="table-light">
+                      <tr style="color:firebrick">
+                          <th scope="col">Letter</th>
+                          <th scope="col">Insect</th>
+                          <th scope="col">City</th>
+                          <th scope="col">River</th>
+                      </tr>
+                  </thead>
+                  <tbody class="table-secondary">
+                      <tr>
+                          <td>P</td>
+                          <td>Praying mantis</td>
+                          <td>Paradise</td>
+                          <td>Paria River</td>
+                      </tr>
+                      <tr>
+                          <td>R</td>
+                          <td>Roach </td>
+                          <td>Reno</td>
+                          <td>Rapid River</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>Ant</td>
+                          <td>Angeles City</td>
+                          <td>Alabama River</td>
+                      </tr>
+                      <tr>
+                          <td>S</td>
+                          <td>scarab</td>
+                          <td>San Francisco</td>
+                          <td>Saginaw River</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>Alderfly</td>
+                          <td>Akashi</td>
+                          <td>Alum Creek River</td>
+                      </tr>
+                      <tr>
+                          <td>D</td>
+                          <td>Deer fly</td>
+                          <td>Denver</td>
+                          <td>Dirty Devil River</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <br>
+          <div class="container btn-toolbar">
+            <div class="btn-group" role="group" aria-label="Imaged Insects">
+                <button class="btn btn-md btn-success btn-outline-dark" type="button">P</button>
+                <button class="btn btn-md btn-success btn-outline-dark" type="button">R</button>
+                <button class="btn btn-md btn-success btn-outline-dark" type="button">A</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Lettered Insects">
+                <button class="btn btn-md btn-warning btn-outline-dark" type="button">S</button>
+                <button class="btn btn-md btn-warning btn-outline-dark" type="button">A</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Remained Lettered Insects">
+                <button class="btn btn-md btn-danger btn-outline-dark" type="button">D</button>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button">
+                  Menu
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="basic.html">Basic page link</a>
+                  <a class="dropdown-item" href="advanced.html">Advanced page link</a>
+              </div>
+          </div>
+      </div>
+      <br>
+      <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="InsectEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="InsectEmail" 
+                aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="form-group">
+                <label for="InsectInput" class="form-label">Insect</label>
+                <input type="text" class="form-control" id="InsectInput" 
+                placeholder="Enter Your Insect">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="InsectCheck">
+                <label class="form-check-label" for="InsectCheck">Sign up for newsletter?</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="card" style="width: 20rem;">
+                    <img src="praying.jpg" class="card-img-top" alt="praying mantis">
+                    <div class="card-body">
+                        <h5 class="card-title">Praying mantis</h5>
+                        <p class="card-text">
+                          They have triangular heads with bulging eyes supported on flexible necks. 
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Mantis" class="btn btn-primary">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 20rem;">
+                    <img src="roach.jpg" class="card-img-top" alt="Roach">
+                    <div class="card-body">
+                        <h5 class="card-title">Roach</h5>
+                        <p class="card-text">
+                          Cockroach, various insect species of the order Blattodea
+                          Common roach (Rutilus rutilus), a fresh and brackish water fish of the family Cyprinidae
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Roach" class="btn btn-primary">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 20rem;">
+                    <img src="scarab.jpg" class="card-img-top" alt="scarab">
+                    <div class="card-body">
+                        <h5 class="card-title">scarab</h5>
+                        <p class="card-text">
+                          Scarabs were popular amulets and impression seals in ancient Egypt.  
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Scarab_(artifact)" class="btn btn-primary">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+       
+         
 </body>
 </html>
